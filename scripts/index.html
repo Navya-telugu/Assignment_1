@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle Assignment</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div id="headerSection" class="header">
+        <div class="row">
+          <div class="home-col-1">
+            <h1 class="award_text">AWARD WINNING</h1>
+            <h1 class="digital_text">DIGITAL MARKETING AGENCY</h1>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+              lacus nec risus finibus feugiat et fermentum
+            </p>
+            <div class="buttons">
+              <button id="showFormBtn" class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="home-col-2">
+            <img class="home-img" src="/images/hero.png" alt="Hero Image" />
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <div id="contactForm" class="form-container hidden">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2 class="form-heading">Talk to Us</h2>
+        <form id="contactFormContent">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+          <div class="name-fields">
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+          </div>
+          <div class="consent-container">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent"> I consent to sharing my information.</label>
+          </div>
+          <button type="submit" class="btn">Contact Us</button>
+        </form>
+      </div>
+      <!-- Portfolio -->
+      <div class="portfolio">
+        <h4 class="section-title">WHAT WE DO</h4>
+        <div class="section-heading">
+          <h3 class="section-subtitle">Services provide for you</h3>
+          <p class="section-description">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum
+          </p>
+        </div>
+        <div class="card-container">
+          <div class="card" data-index="0">
+            <img src="/images/1.png" alt="Card 1" class="card-image" />
+            <div class="overlay-card">
+              <div class="img_block"><img src="/images/icon.png"/></div>
+              <div class="text_web">WEB DEVELOPEMENT</div>
+              <p class="text_para_m">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+              <div class="read_text">READ MORE<img src="/images/arrow.svg"/></div>
+            </div>
+          </div>
+          <div class="card" data-index="1">
+            <img src="/images/2.png" alt="Card 2" class="card-image" />
+            <div class="overlay-card"></div>
+          </div>
+          <div class="card" data-index="2">
+            <img src="/images/3.png" alt="Card 3" class="card-image" />
+            <div class="overlay-card"></div>
+          </div>
+          <div class="card" data-index="3">
+            <img src="/images/1.png" alt="Card 4" class="card-image" />
+            <div class="overlay-card"></div>
+          </div>
+          <div class="card" data-index="4">
+            <img src="/images/2.png" alt="Card 5" class="card-image" />
+            <div class="overlay-card"></div>
+          </div>
+        </div>
+        <div class="dots-container">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+        </div>
+      </div>
+      <!-- About Section -->
+      <div class="about">
+        <span class="section-title">WHY CHOOSE US</span>
+        <h1 class="section-subtitle">Why We Are Best</h1>
+        <div class="about-blocks">
+          <div class="block">
+            <img src="/images/1.svg" alt="Icon 1" class="vector-img" />
+            <h4 class="block-title">Clarified Vision & Target</h4>
+            <p class="block-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </div>
+          <div class="block">
+            <img src="/images/2.svg" alt="Icon 2" class="vector-img" />
+            <h4 class="block-title">High Performance</h4>
+            <p class="block-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </div>
+          <div class="block">
+            <img src="/images/3.svg" alt="Icon 3" class="vector-img" />
+            <h4 class="block-title">Maintain Security</h4>
+            <p class="block-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </div>
+          <div class="block">
+            <img src="/images/4.svg" alt="Icon 4" class="vector-img" />
+            <h4 class="block-title">Better Strategy & Quality</h4>
+            <p class="block-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Status Section -->
+      <div class="status">
+        <span class="section-title">OUR PROJECT</span>
+        <h1 class="section-subtitle">WHY WE ARE BEST</h1>
+        <div class="status-blocks">
+          <div class="img-block">
+            <img
+              src="/images/image_1.png"
+              alt="Status Image"
+              class="status-img"
+            />
+          </div>
+          <div class="stat-block">
+            <div class="stat-item">
+              <h4 class="stat-title">Genderless Kei – Japan’s Hot</h4>
+              <p class="stat-description">
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div class="stat-item">
+              <h4 class="stat-title">Better Strategy & Quality</h4>
+              <p class="stat-description">
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div class="stat-item">
+              <h4 class="stat-title">Genderless Kei – Japan’s Hot</h4>
+              <p class="stat-description">
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Feedback Section -->
+      <div class="feedback">
+        <span class="section-title">Experts growth</span>
+        <h1 class="section-subtitle">Our Company Growth</h1>
+        <div class="feedback-blocks">
+          <div class="feedback-item">
+            <img src="/images/heart.png" alt="Heart Icon" class="vector-img" />
+            <h4 class="feedback-count">199 +</h4>
+            <p class="feedback-description">Satisfied Customers</p>
+          </div>
+          <div class="feedback-item">
+            <img src="/images/clock.png" alt="Clock Icon" class="vector-img" />
+            <h4 class="feedback-count">1591+</h4>
+            <p class="feedback-description">Days Of Operation.</p>
+          </div>
+          <div class="feedback-item">
+            <img src="/images/Path-3.png" alt="Path Icon" class="vector-img" />
+            <h4 class="feedback-count">283 +</h4>
+            <p class="feedback-description">Complete Projects.</p>
+          </div>
+          <div class="feedback-item">
+            <img src="/images/Path-4.png" alt="Award Icon" class="vector-img" />
+            <h4 class="feedback-count">75+</h4>
+            <p class="feedback-description">Win Awards.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Client Feedback Section -->
+      <div class="feedback-client">
+        <span class="section-title">CLIENT'S FEEDBACK</span>
+        <h1 class="section-subtitle">PEOPLE SAY ABOUT US!</h1>
+        <p class="section-description">
+          Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
+          reproduced below for those interested. Sections Bonorum et Malorum
+          original.
+        </p>
+        <div class="client-feedback">
+          <h4 class="client-name">JANNAT TUMPA</h4>
+          <h4 class="client-role">- COO, AMERIMAR ENTERPRISES, INC.</h4>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <img src="/images/Group.png" alt="Footer Image" class="footer-img" />
+      </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
